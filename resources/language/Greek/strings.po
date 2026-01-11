@@ -1,0 +1,498 @@
+# XBMC Media Center language file
+# Addon Name: Ororo TV
+# Addon id: plugin.video.ororotv
+# Addon version: 4.0.0
+# Addon Provider: ororo.tv
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2020-08-19 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider."
+msgstr ""
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Γενικά"
+
+msgctxt "#30001"
+msgid "Enable Meta Data"
+msgstr "Χρήση μεταδεδομένων"
+
+msgctxt "#30002"
+msgid "Enable Fanart"
+msgstr "Χρήση Fanart"
+
+msgctxt "#30003"
+msgid "Favourites"
+msgstr "Αγαπημένα"
+
+msgctxt "#30004"
+msgid "Sort by: Title"
+msgstr "Ταξ.: Τίτλος"
+
+msgctxt "#30005"
+msgid "Sort by: Status"
+msgstr "Ταξ.: Κατάσταση"
+
+msgctxt "#30006"
+msgid "Sort by: Added"
+msgstr "Ταξ.: Προσθήκη"
+
+msgctxt "#30007"
+msgid "Downloads"
+msgstr "Λήψεις"
+
+msgctxt "#30008"
+msgid "Resume Playback"
+msgstr "Συνέχιση αναπαραγωγής"
+
+msgctxt "#30040"
+msgid "Library"
+msgstr "Συλλογή"
+
+msgctxt "#30041"
+msgid "Don't forget to add this folder to media sources."
+msgstr "Μην ξεχάσετε να προσθέσετε το φάκελο στις πηγές πολυμέσων."
+
+msgctxt "#30042"
+msgid "TV Folder"
+msgstr "Φάκελος σειρών"
+
+msgctxt "#30043"
+msgid "Automatic Updates for Subscriptions"
+msgstr "Αυτόματες ενημερώσεις συνδρομών"
+
+msgctxt "#30044"
+msgid "Subscription Update Interval"
+msgstr "Διάστημα ενημερώσεων συνδρομών"
+
+msgctxt "#30045"
+msgid "Update Library after Subscription Updates"
+msgstr "Ενημέρωση συλλογής μετά από ενημερώσεις συνδρομών"
+
+msgctxt "#30080"
+msgid "Subtitles"
+msgstr "Υπότιτλοι"
+
+msgctxt "#30081"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr "Οι υπότιτλοι μπορεί να είναι μη διαθέσιμοι ή ασυγχρόνιστοι."
+
+msgctxt "#30082"
+msgid "In that case use your own subtitles."
+msgstr "Σε αυτή τη περίπτωση χρησιμοποιήστε τους δικούς σας."
+
+msgctxt "#30083"
+msgid "Enable subtitles"
+msgstr "Ενεργοποίηση υποτίτλων"
+
+msgctxt "#30084"
+msgid "Primary Language"
+msgstr "Πρώτη Γλώσσα"
+
+msgctxt "#30085"
+msgid "Secondary Language"
+msgstr "Δεύτερη Γλώσσα"
+
+msgctxt "#30302"
+msgid " is on by default"
+msgstr " είναι πλέον προεπιλεγμένη"
+
+msgctxt "#30303"
+msgid "Added to Favourites"
+msgstr "Προστέθηκε στα Αγαπημένα"
+
+msgctxt "#30304"
+msgid "Removed from Favourites"
+msgstr "Αφαιρέθηκε από τα Αγαπημένα"
+
+msgctxt "#30305"
+msgid "Moved up"
+msgstr "Μετακινήθηκε πάνω"
+
+msgctxt "#30306"
+msgid "Moved down"
+msgstr "Μετακινήθηκε κάτω"
+
+msgctxt "#30307"
+msgid "Item already in Favourites"
+msgstr "Υπάρχει ήδη στα Αγαπημένα"
+
+msgctxt "#30308"
+msgid "Download started"
+msgstr "Η λήψη ξεκίνησε"
+
+msgctxt "#30309"
+msgid "Download Progress - "
+msgstr "Πρόοδος λήψης - "
+
+msgctxt "#30310"
+msgid "Download finished successfully"
+msgstr "Η λήψη ολοκληρώθηκε με επιτυχία"
+
+msgctxt "#30311"
+msgid "Added to Library Folder"
+msgstr "Προστέθηκε στα φάκελο συλλογής"
+
+msgctxt "#30312"
+msgid "Added to Subscriptions"
+msgstr "Προστέθηκε στις Συνδρομές"
+
+msgctxt "#30313"
+msgid "Removed from Subscriptions"
+msgstr "Αφαιρέθηκε από τις Συνδρομές"
+
+msgctxt "#30314"
+msgid "Subscriptions updated"
+msgstr "Οι Συνδρομές ενημερώθηκαν"
+
+msgctxt "#30315"
+msgid "Subscriptions cleaned up"
+msgstr "Οι Συνδρομές εκκαθαριστήκαν"
+
+msgctxt "#30316"
+msgid "Item already in Subscriptions"
+msgstr "Υπάρχει ήδη στις Συνδρομές"
+
+msgctxt "#30317"
+msgid "No subtitles available"
+msgstr "Δεν υπάρχουν διαθέσιμοι υπότιτλοι"
+
+msgctxt "#30318"
+msgid "Free account limit is reached"
+msgstr "Δεν υπάρχει διαθέσιμη ροή"
+
+msgctxt "#30319"
+msgid "Paid subscription is required"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Load failed"
+msgstr ""
+
+msgctxt "#30321"
+msgid "YouTube addon is not installed."
+msgstr "Το πρόσθετο YouTube δεν έχει εγκατασταθεί."
+
+msgctxt "#30322"
+msgid "This stream requires it."
+msgstr "Η ροή αυτή το απαιτεί."
+
+msgctxt "#30323"
+msgid "You haven't added any Subscription."
+msgstr "Δεν έχετε προσθέσει Συνδρομές."
+
+msgctxt "#30324"
+msgid "Latest Episodes require it."
+msgstr "Τα Πρόσφατα Επεισόδια το απαιτούν."
+
+msgctxt "#30325"
+msgid "You have disabled Automatic Updates for Subscriptions."
+msgstr "Έχετε απενεργοποιήσει τις Αυτόματες ενημερώσεις συνδρομών."
+
+msgctxt "#30326"
+msgid "Latest Episodes require it."
+msgstr "Τα Πρόσφατα Επεισόδια το απαιτούν."
+
+msgctxt "#30341"
+msgid "You have not set the download folder."
+msgstr "Δεν έχετε ορίσει φάκελο λήψης."
+
+msgctxt "#30342"
+msgid "Do you want to set it now?"
+msgstr "Θέλετε να τον ορίσετε τώρα;"
+
+msgctxt "#30343"
+msgid "The video you are trying to download already exists."
+msgstr "Το βίντεο που θέλετε να κατεβάσετε υπάρχει ήδη."
+
+msgctxt "#30344"
+msgid "Do you want to download it again?"
+msgstr "Θέλετε να το ξανακατεβάσετε;"
+
+msgctxt "#30345"
+msgid "The download of this video is in progress."
+msgstr "Η λήψη αυτού του βίντεο είναι σε εξέλιξη."
+
+msgctxt "#30346"
+msgid "Do you want to cancel it?"
+msgstr "Θέλετε να την ακυρώσετε;"
+
+msgctxt "#30347"
+msgid "Movie already in library."
+msgstr "Ταινία ήδη στη βιβλιοθήκη."
+
+msgctxt "#30348"
+msgid "TV show already in library."
+msgstr "Σειρά ήδη στη βιβλιοθήκη."
+
+msgctxt "#30349"
+msgid "Do you really want to add it?"
+msgstr "Θέλετε πραγματικά να τη προσθέσετε;"
+
+msgctxt "#30350"
+msgid "Resume from"
+msgstr "Συνέχεια από"
+
+msgctxt "#30351"
+msgid "Resume"
+msgstr "Συνέχεια"
+
+msgctxt "#30352"
+msgid "Start from beginning"
+msgstr "Εκκίνηση από την αρχή"
+
+msgctxt "#30361"
+msgid "Next Page"
+msgstr "Επόμενη σελίδα"
+
+msgctxt "#30362"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgctxt "#30363"
+msgid "Downloads"
+msgstr "Λήψεις"
+
+msgctxt "#30364"
+msgid "Refresh Info"
+msgstr "Ανανέωση πληροφοριών"
+
+msgctxt "#30401"
+msgid "Play"
+msgstr "Αναπαραγωγή"
+
+msgctxt "#30402"
+msgid "Random Play"
+msgstr "Τυχαία Αναπαραγωγή"
+
+msgctxt "#30403"
+msgid "Play from here"
+msgstr "Αναπαραγωγή από εδώ"
+
+msgctxt "#30404"
+msgid "Queue All"
+msgstr "Όλα στην αναμονή"
+
+msgctxt "#30405"
+msgid "Queue video"
+msgstr "Βίντεο στην αναμονή"
+
+msgctxt "#30406"
+msgid "Download video"
+msgstr "Λήψη βίντεο"
+
+msgctxt "#30407"
+msgid "Mark as unwatched"
+msgstr "Σήμανση ως μη προβληθέν"
+
+msgctxt "#30408"
+msgid "Mark as watched"
+msgstr "Σήμανση ως προβληθέν"
+
+msgctxt "#30409"
+msgid "Add-on settings"
+msgstr "Ρυθμίσεις πρόσθετου"
+
+msgctxt "#30410"
+msgid "Now playing..."
+msgstr "Τώρα εκτελείται..."
+
+msgctxt "#30411"
+msgid "Home..."
+msgstr "Αρχική..."
+
+msgctxt "#30412"
+msgid "Movie information"
+msgstr "Πληροφορίες ταινίας"
+
+msgctxt "#30413"
+msgid "TV show information"
+msgstr "Πληροφορίες σειράς"
+
+msgctxt "#30414"
+msgid "Episode information"
+msgstr "Πληροφορίες επεισοδίου"
+
+msgctxt "#30415"
+msgid "Refresh Info"
+msgstr "Ανανέωση πληροφοριών"
+
+msgctxt "#30416"
+msgid "Watch Trailer"
+msgstr "Αναπαραγωγή Trailer"
+
+msgctxt "#30417"
+msgid "Add to favourites"
+msgstr "Προσθήκη στα αγαπημένα"
+
+msgctxt "#30418"
+msgid "Remove from favourites"
+msgstr "Αφαίρεση από τα αγαπημένα"
+
+msgctxt "#30419"
+msgid "Move up"
+msgstr "Μετακίνηση πάνω"
+
+msgctxt "#30420"
+msgid "Move down"
+msgstr "Μετακίνηση κάτω"
+
+msgctxt "#30421"
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+msgctxt "#30422"
+msgid "Add to Library"
+msgstr "Προσθήκη στη βιβλιοθήκη"
+
+msgctxt "#30423"
+msgid "Add Subscription"
+msgstr "Προσθήκη συνδρομής"
+
+msgctxt "#30424"
+msgid "Cancel Subscription"
+msgstr "Ακύρωση συνδρομής"
+
+msgctxt "#30425"
+msgid "Update Subscriptions"
+msgstr "Ενημέρωση συνδρομών"
+
+msgctxt "#30426"
+msgid "Update Library"
+msgstr "Ενημέρωση συλλογής"
+
+msgctxt "#30427"
+msgid "Set Global view"
+msgstr "Ορισμός καθολικής θέασης"
+
+msgctxt "#30428"
+msgid "Set Movies view"
+msgstr "Ορισμός θέασης ταινιών"
+
+msgctxt "#30429"
+msgid "Set TV Shows view"
+msgstr "Ορισμός θέασης σειρών"
+
+msgctxt "#30430"
+msgid "Set Seasons view"
+msgstr "Ορισμός θέασης κύκλων"
+
+msgctxt "#30431"
+msgid "Set Episodes view"
+msgstr "Ορισμός θέασης επεισοδίων"
+
+msgctxt "#30432"
+msgid "Sources"
+msgstr "Πηγές"
+
+msgctxt "#30433"
+msgid "Auto-play"
+msgstr "Αυτόματη αναπαραγωγή"
+
+msgctxt "#30434"
+msgid "Movie information"
+msgstr ""
+
+msgctxt "#30435"
+msgid "Set Movie view"
+msgstr ""
+
+msgctxt "#30436"
+msgid "Toggle watched"
+msgstr ""
+
+msgctxt "#30450"
+msgid "Watch TV shows and movies from ororo.tv"
+msgstr "Παρακολουθήστε σειρές από το ororo.tv"
+
+msgctxt "#30500"
+msgid "Added"
+msgstr ""
+
+msgctxt "#30501"
+msgid "Title"
+msgstr "Τίτλος"
+
+msgctxt "#30502"
+msgid "Release"
+msgstr "Κυκλοφορία"
+
+msgctxt "#30503"
+msgid "Rating"
+msgstr "Αξιολόγηση"
+
+msgctxt "#30504"
+msgid "Genres"
+msgstr "Είδη"
+
+msgctxt "#30505"
+msgid "Favourites"
+msgstr "Αγαπημένα"
+
+msgctxt "#30506"
+msgid "Subscriptions"
+msgstr "Συνδρομές"
+
+msgctxt "#30507"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgctxt "#30508"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#30509"
+msgid "TV Shows"
+msgstr ""
+
+msgctxt "#30510"
+msgid "Account"
+msgstr ""
+
+msgctxt "#30511"
+msgid "Email"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Your ororo.tv email and password are required."
+msgstr ""
+
+msgctxt "#30514"
+msgid "Register free at https://ororo.tv"
+msgstr ""
+
+msgctxt "#30515"
+msgid "Clear Cache"
+msgstr ""
+
+msgctxt "#30516"
+msgid "Failed to login to Ororo.tv"
+msgstr ""
+
+msgctxt "#30517"
+msgid "Please enter your login credentials"
+msgstr ""

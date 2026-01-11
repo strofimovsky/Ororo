@@ -1,0 +1,498 @@
+# XBMC Media Center language file
+# Addon Name: Ororo TV
+# Addon id: plugin.video.ororotv
+# Addon version: 4.0.0
+# Addon Provider: ororo.tv
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2020-08-19 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
+
+msgctxt "Addon Summary"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider."
+msgstr ""
+
+msgctxt "#30000"
+msgid "General"
+msgstr "General"
+
+msgctxt "#30001"
+msgid "Enable Meta Data"
+msgstr "Activeaza Metadate"
+
+msgctxt "#30002"
+msgid "Enable Fanart"
+msgstr "Activeaza Grafică"
+
+msgctxt "#30003"
+msgid "Favourites"
+msgstr "Favorite"
+
+msgctxt "#30004"
+msgid "Sort by: Title"
+msgstr "Sortare după: Titlu"
+
+msgctxt "#30005"
+msgid "Sort by: Status"
+msgstr "Sortare după: An"
+
+msgctxt "#30006"
+msgid "Sort by: Added"
+msgstr "Sortare după: Data adăugării"
+
+msgctxt "#30007"
+msgid "Downloads"
+msgstr "Descărcări"
+
+msgctxt "#30008"
+msgid "Resume Playback"
+msgstr "Redare de la ultima poziție"
+
+msgctxt "#30040"
+msgid "Library"
+msgstr "Mediatecă"
+
+msgctxt "#30041"
+msgid "Don't forget to add this folder to media sources."
+msgstr "Nu uita să adaugi directorul la Surse Media"
+
+msgctxt "#30042"
+msgid "TV Folder"
+msgstr "Director TV"
+
+msgctxt "#30043"
+msgid "Automatic Updates for Subscriptions"
+msgstr "Actualizare automată a abonamentelor"
+
+msgctxt "#30044"
+msgid "Subscription Update Interval"
+msgstr "Interval de actualizare a abonamentelor"
+
+msgctxt "#30045"
+msgid "Update Library after Subscription Updates"
+msgstr "Actualizează mediateca cu abonamentele"
+
+msgctxt "#30080"
+msgid "Subtitles"
+msgstr "Subtitrări"
+
+msgctxt "#30081"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr "Subtitrările pot fi indisponibile sau desincronizate"
+
+msgctxt "#30082"
+msgid "In that case use your own subtitles."
+msgstr "În acest caz poți utiliza propriile subtitrări"
+
+msgctxt "#30083"
+msgid "Enable subtitles"
+msgstr "Activare subtitrări"
+
+msgctxt "#30084"
+msgid "Primary Language"
+msgstr "Limba principală"
+
+msgctxt "#30085"
+msgid "Secondary Language"
+msgstr "Limba secundară"
+
+msgctxt "#30302"
+msgid " is on by default"
+msgstr " este activat implicit"
+
+msgctxt "#30303"
+msgid "Added to Favourites"
+msgstr "Adăugat la Favorite"
+
+msgctxt "#30304"
+msgid "Removed from Favourites"
+msgstr "Șters din Favorite"
+
+msgctxt "#30305"
+msgid "Moved up"
+msgstr "Mutat mai sus"
+
+msgctxt "#30306"
+msgid "Moved down"
+msgstr "Mutat mai jos"
+
+msgctxt "#30307"
+msgid "Item already in Favourites"
+msgstr "Selecția se află deja în favorite"
+
+msgctxt "#30308"
+msgid "Download started"
+msgstr "Descărcare începută"
+
+msgctxt "#30309"
+msgid "Download Progress - "
+msgstr "Descărcare - "
+
+msgctxt "#30310"
+msgid "Download finished successfully"
+msgstr "Descărcare finalizată cu succes"
+
+msgctxt "#30311"
+msgid "Added to Library Folder"
+msgstr "Adăugat la mediatecă"
+
+msgctxt "#30312"
+msgid "Added to Subscriptions"
+msgstr "Adăugat la abonamente"
+
+msgctxt "#30313"
+msgid "Removed from Subscriptions"
+msgstr "Șters din abonamente"
+
+msgctxt "#30314"
+msgid "Subscriptions updated"
+msgstr "Abonamente actualizate"
+
+msgctxt "#30315"
+msgid "Subscriptions cleaned up"
+msgstr "Abonamente curățate"
+
+msgctxt "#30316"
+msgid "Item already in Subscriptions"
+msgstr "Serialul se află deja în abonamente"
+
+msgctxt "#30317"
+msgid "No subtitles available"
+msgstr "Nu există subtitrări disponibile"
+
+msgctxt "#30318"
+msgid "Free account limit is reached"
+msgstr "Nu există flux video disponibil"
+
+msgctxt "#30319"
+msgid "Paid subscription is required"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Load failed"
+msgstr ""
+
+msgctxt "#30321"
+msgid "YouTube addon is not installed."
+msgstr "Suplimentul YouTube nu este instalat"
+
+msgctxt "#30322"
+msgid "This stream requires it."
+msgstr "Necesar pentru fluxul actual."
+
+msgctxt "#30323"
+msgid "You haven't added any Subscription."
+msgstr "Nu ai adăugat niciun abonament."
+
+msgctxt "#30324"
+msgid "Latest Episodes require it."
+msgstr "Necesar pentru ultimele episoade."
+
+msgctxt "#30325"
+msgid "You have disabled Automatic Updates for Subscriptions."
+msgstr "Ai dezactivat actualizarea automată pentru abonamente."
+
+msgctxt "#30326"
+msgid "Latest Episodes require it."
+msgstr "Necesar pentru ultimele episoade."
+
+msgctxt "#30341"
+msgid "You have not set the download folder."
+msgstr "Nu ai configurat directorul de descărcări."
+
+msgctxt "#30342"
+msgid "Do you want to set it now?"
+msgstr "Vrei sa îl setezi acum?"
+
+msgctxt "#30343"
+msgid "The video you are trying to download already exists."
+msgstr "Videoclipul exista deja."
+
+msgctxt "#30344"
+msgid "Do you want to download it again?"
+msgstr "Vrei să îl descarci iar?"
+
+msgctxt "#30345"
+msgid "The download of this video is in progress."
+msgstr "Descărcarea acestui clip este în curs."
+
+msgctxt "#30346"
+msgid "Do you want to cancel it?"
+msgstr "Vrei să întrerupi?"
+
+msgctxt "#30347"
+msgid "Movie already in library."
+msgstr "Film deja în Mediatecă."
+
+msgctxt "#30348"
+msgid "TV show already in library."
+msgstr "Serial deja în Mediatecă."
+
+msgctxt "#30349"
+msgid "Do you really want to add it?"
+msgstr "Vrei să îl adaugi?"
+
+msgctxt "#30350"
+msgid "Resume from"
+msgstr "Reia de la"
+
+msgctxt "#30351"
+msgid "Resume"
+msgstr "Reia"
+
+msgctxt "#30352"
+msgid "Start from beginning"
+msgstr "Pornește de la început"
+
+msgctxt "#30361"
+msgid "Next Page"
+msgstr "Următoarea pagină"
+
+msgctxt "#30362"
+msgid "Search"
+msgstr "Caută"
+
+msgctxt "#30363"
+msgid "Downloads"
+msgstr "Descărcări"
+
+msgctxt "#30364"
+msgid "Refresh Info"
+msgstr "Actualizează informații"
+
+msgctxt "#30401"
+msgid "Play"
+msgstr "Redare"
+
+msgctxt "#30402"
+msgid "Random Play"
+msgstr "Redare aleatorie"
+
+msgctxt "#30403"
+msgid "Play from here"
+msgstr "Redă de aici"
+
+msgctxt "#30404"
+msgid "Queue All"
+msgstr "Adaugă tot în lista de așteptare"
+
+msgctxt "#30405"
+msgid "Queue video"
+msgstr "Adaugă clip în lista de așteptare"
+
+msgctxt "#30406"
+msgid "Download video"
+msgstr "Descarcă fișier video"
+
+msgctxt "#30407"
+msgid "Mark as unwatched"
+msgstr "Marchează ca nevizionat"
+
+msgctxt "#30408"
+msgid "Mark as watched"
+msgstr "Marchează ca vizionat"
+
+msgctxt "#30409"
+msgid "Add-on settings"
+msgstr "Configurare supliment"
+
+msgctxt "#30410"
+msgid "Now playing..."
+msgstr "Rulează acum..."
+
+msgctxt "#30411"
+msgid "Home..."
+msgstr "Acasă..."
+
+msgctxt "#30412"
+msgid "Movie information"
+msgstr "Informații despre film"
+
+msgctxt "#30413"
+msgid "TV show information"
+msgstr "Informații despre serial"
+
+msgctxt "#30414"
+msgid "Episode information"
+msgstr "Informații despre episod"
+
+msgctxt "#30415"
+msgid "Refresh Info"
+msgstr "Actualizează informații"
+
+msgctxt "#30416"
+msgid "Watch Trailer"
+msgstr "Urmărește prezentare"
+
+msgctxt "#30417"
+msgid "Add to favourites"
+msgstr "Adaugă la favorite"
+
+msgctxt "#30418"
+msgid "Remove from favourites"
+msgstr "Șterge din favorite"
+
+msgctxt "#30419"
+msgid "Move up"
+msgstr "Mută în sus"
+
+msgctxt "#30420"
+msgid "Move down"
+msgstr "Mută în jos"
+
+msgctxt "#30421"
+msgid "Remove"
+msgstr "Șterge"
+
+msgctxt "#30422"
+msgid "Add to Library"
+msgstr "Adaugă la Mediatecă"
+
+msgctxt "#30423"
+msgid "Add Subscription"
+msgstr "Adaugă abonament"
+
+msgctxt "#30424"
+msgid "Cancel Subscription"
+msgstr "Anulează abonamentul"
+
+msgctxt "#30425"
+msgid "Update Subscriptions"
+msgstr "Actualizează abonamentele"
+
+msgctxt "#30426"
+msgid "Update Library"
+msgstr "Actualizează mediateca"
+
+msgctxt "#30427"
+msgid "Set Global view"
+msgstr "Mod vizualizare Global"
+
+msgctxt "#30428"
+msgid "Set Movies view"
+msgstr "Mod vizualizare Filme"
+
+msgctxt "#30429"
+msgid "Set TV Shows view"
+msgstr "Mod vizualizare Seriale"
+
+msgctxt "#30430"
+msgid "Set Seasons view"
+msgstr "Mod vizualizate Sezoane"
+
+msgctxt "#30431"
+msgid "Set Episodes view"
+msgstr "Mod vizualizare Episoade"
+
+msgctxt "#30432"
+msgid "Sources"
+msgstr "Surse"
+
+msgctxt "#30433"
+msgid "Auto-play"
+msgstr "Auto-rulare"
+
+msgctxt "#30434"
+msgid "Movie information"
+msgstr ""
+
+msgctxt "#30435"
+msgid "Set Movie view"
+msgstr ""
+
+msgctxt "#30436"
+msgid "Toggle watched"
+msgstr ""
+
+msgctxt "#30450"
+msgid "Watch TV shows and movies from ororo.tv"
+msgstr "Urmărește seriale de ororo.tv"
+
+msgctxt "#30500"
+msgid "Added"
+msgstr ""
+
+msgctxt "#30501"
+msgid "Title"
+msgstr "Titlu"
+
+msgctxt "#30502"
+msgid "Release"
+msgstr "Dată de lansare"
+
+msgctxt "#30503"
+msgid "Rating"
+msgstr "Scor"
+
+msgctxt "#30504"
+msgid "Genres"
+msgstr "Genuri"
+
+msgctxt "#30505"
+msgid "Favourites"
+msgstr "Favorite"
+
+msgctxt "#30506"
+msgid "Subscriptions"
+msgstr "Abonamente"
+
+msgctxt "#30507"
+msgid "Search"
+msgstr "Caută"
+
+msgctxt "#30508"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#30509"
+msgid "TV Shows"
+msgstr ""
+
+msgctxt "#30510"
+msgid "Account"
+msgstr ""
+
+msgctxt "#30511"
+msgid "Email"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Your ororo.tv email and password are required."
+msgstr ""
+
+msgctxt "#30514"
+msgid "Register free at https://ororo.tv"
+msgstr ""
+
+msgctxt "#30515"
+msgid "Clear Cache"
+msgstr ""
+
+msgctxt "#30516"
+msgid "Failed to login to Ororo.tv"
+msgstr ""
+
+msgctxt "#30517"
+msgid "Please enter your login credentials"
+msgstr ""

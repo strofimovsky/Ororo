@@ -1,0 +1,524 @@
+# XBMC Media Center language file
+# Addon Name: Ororo TV
+# Addon id: plugin.video.ororotv
+# Addon version: 4.0.0
+# Addon Provider: ororo.tv
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2020-08-19 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider."
+msgstr ""
+
+#Settings
+
+msgctxt "#30000"
+msgid "General"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Enable Meta Data"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Enable Fanart"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Favourites"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Sort by: Title"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Sort by: Status"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Sort by: Added"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Downloads"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Resume Playback"
+msgstr ""
+
+#empty strings from id 30009 to 30039
+
+msgctxt "#30040"
+msgid "Library"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Don't forget to add this folder to media sources."
+msgstr ""
+
+msgctxt "#30042"
+msgid "TV Folder"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Automatic Updates for Subscriptions"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Subscription Update Interval"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Update Library after Subscription Updates"
+msgstr ""
+
+#empty strings from id 30046 to 30079
+
+msgctxt "#30080"
+msgid "Subtitles"
+msgstr ""
+
+msgctxt "#30081"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr ""
+
+msgctxt "#30082"
+msgid "In that case use your own subtitles."
+msgstr ""
+
+msgctxt "#30083"
+msgid "Enable subtitles"
+msgstr ""
+
+msgctxt "#30084"
+msgid "Primary Language"
+msgstr ""
+
+msgctxt "#30085"
+msgid "Secondary Language"
+msgstr ""
+
+#Info
+#empty strings from id 30086 to 30301
+
+msgctxt "#30302"
+msgid " is on by default"
+msgstr ""
+
+msgctxt "#30303"
+msgid "Added to Favourites"
+msgstr ""
+
+msgctxt "#30304"
+msgid "Removed from Favourites"
+msgstr ""
+
+msgctxt "#30305"
+msgid "Moved up"
+msgstr ""
+
+msgctxt "#30306"
+msgid "Moved down"
+msgstr ""
+
+msgctxt "#30307"
+msgid "Item already in Favourites"
+msgstr ""
+
+msgctxt "#30308"
+msgid "Download started"
+msgstr ""
+
+msgctxt "#30309"
+msgid "Download Progress - "
+msgstr ""
+
+msgctxt "#30310"
+msgid "Download finished successfully"
+msgstr ""
+
+msgctxt "#30311"
+msgid "Added to Library Folder"
+msgstr ""
+
+msgctxt "#30312"
+msgid "Added to Subscriptions"
+msgstr ""
+
+msgctxt "#30313"
+msgid "Removed from Subscriptions"
+msgstr ""
+
+msgctxt "#30314"
+msgid "Subscriptions updated"
+msgstr ""
+
+msgctxt "#30315"
+msgid "Subscriptions cleaned up"
+msgstr ""
+
+msgctxt "#30316"
+msgid "Item already in Subscriptions"
+msgstr ""
+
+msgctxt "#30317"
+msgid "No subtitles available"
+msgstr ""
+
+msgctxt "#30318"
+msgid "Free account limit is reached"
+msgstr ""
+
+msgctxt "#30319"
+msgid "Paid subscription is required"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Load failed"
+msgstr ""
+
+#OK
+
+msgctxt "#30321"
+msgid "YouTube addon is not installed."
+msgstr ""
+
+msgctxt "#30322"
+msgid "This stream requires it."
+msgstr ""
+
+msgctxt "#30323"
+msgid "You haven't added any Subscription."
+msgstr ""
+
+msgctxt "#30324"
+msgid "Latest Episodes require it."
+msgstr ""
+
+msgctxt "#30325"
+msgid "You have disabled Automatic Updates for Subscriptions."
+msgstr ""
+
+msgctxt "#30326"
+msgid "Latest Episodes require it."
+msgstr ""
+
+#YesNo
+#empty strings from id 30327 to 30340
+
+msgctxt "#30341"
+msgid "You have not set the download folder."
+msgstr ""
+
+msgctxt "#30342"
+msgid "Do you want to set it now?"
+msgstr ""
+
+msgctxt "#30343"
+msgid "The video you are trying to download already exists."
+msgstr ""
+
+msgctxt "#30344"
+msgid "Do you want to download it again?"
+msgstr ""
+
+msgctxt "#30345"
+msgid "The download of this video is in progress."
+msgstr ""
+
+msgctxt "#30346"
+msgid "Do you want to cancel it?"
+msgstr ""
+
+msgctxt "#30347"
+msgid "Movie already in library."
+msgstr ""
+
+msgctxt "#30348"
+msgid "TV show already in library."
+msgstr ""
+
+msgctxt "#30349"
+msgid "Do you really want to add it?"
+msgstr ""
+
+msgctxt "#30350"
+msgid "Resume from"
+msgstr ""
+
+msgctxt "#30351"
+msgid "Resume"
+msgstr ""
+
+msgctxt "#30352"
+msgid "Start from beginning"
+msgstr ""
+
+#Misc
+#empty strings from id 30353 to 30360
+
+msgctxt "#30361"
+msgid "Next Page"
+msgstr ""
+
+msgctxt "#30362"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30363"
+msgid "Downloads"
+msgstr ""
+
+msgctxt "#30364"
+msgid "Refresh Info"
+msgstr ""
+
+#ContextMenu
+#empty strings from id 30365 to 30400
+
+msgctxt "#30401"
+msgid "Play"
+msgstr ""
+
+msgctxt "#30402"
+msgid "Random Play"
+msgstr ""
+
+msgctxt "#30403"
+msgid "Play from here"
+msgstr ""
+
+msgctxt "#30404"
+msgid "Queue All"
+msgstr ""
+
+msgctxt "#30405"
+msgid "Queue video"
+msgstr ""
+
+msgctxt "#30406"
+msgid "Download video"
+msgstr ""
+
+msgctxt "#30407"
+msgid "Mark as unwatched"
+msgstr ""
+
+msgctxt "#30408"
+msgid "Mark as watched"
+msgstr ""
+
+msgctxt "#30409"
+msgid "Add-on settings"
+msgstr ""
+
+msgctxt "#30410"
+msgid "Now playing..."
+msgstr ""
+
+msgctxt "#30411"
+msgid "Home..."
+msgstr ""
+
+msgctxt "#30412"
+msgid "Movie information"
+msgstr ""
+
+msgctxt "#30413"
+msgid "TV show information"
+msgstr ""
+
+msgctxt "#30414"
+msgid "Episode information"
+msgstr ""
+
+msgctxt "#30415"
+msgid "Refresh Info"
+msgstr ""
+
+msgctxt "#30416"
+msgid "Watch Trailer"
+msgstr ""
+
+msgctxt "#30417"
+msgid "Add to favourites"
+msgstr ""
+
+msgctxt "#30418"
+msgid "Remove from favourites"
+msgstr ""
+
+msgctxt "#30419"
+msgid "Move up"
+msgstr ""
+
+msgctxt "#30420"
+msgid "Move down"
+msgstr ""
+
+msgctxt "#30421"
+msgid "Remove"
+msgstr ""
+
+msgctxt "#30422"
+msgid "Add to Library"
+msgstr ""
+
+msgctxt "#30423"
+msgid "Add Subscription"
+msgstr ""
+
+msgctxt "#30424"
+msgid "Cancel Subscription"
+msgstr ""
+
+msgctxt "#30425"
+msgid "Update Subscriptions"
+msgstr ""
+
+msgctxt "#30426"
+msgid "Update Library"
+msgstr ""
+
+msgctxt "#30427"
+msgid "Set Global view"
+msgstr ""
+
+msgctxt "#30428"
+msgid "Set Movies view"
+msgstr ""
+
+msgctxt "#30429"
+msgid "Set TV Shows view"
+msgstr ""
+
+msgctxt "#30430"
+msgid "Set Seasons view"
+msgstr ""
+
+msgctxt "#30431"
+msgid "Set Episodes view"
+msgstr ""
+
+msgctxt "#30432"
+msgid "Sources"
+msgstr ""
+
+msgctxt "#30433"
+msgid "Auto-play"
+msgstr ""
+
+msgctxt "#30434"
+msgid "Movie information"
+msgstr ""
+
+msgctxt "#30435"
+msgid "Set Movie view"
+msgstr ""
+
+msgctxt "#30436"
+msgid "Toggle watched"
+msgstr ""
+
+#Description
+#empty strings from id 30437 to 30449
+
+msgctxt "#30450"
+msgid "Watch TV shows and movies from ororo.tv"
+msgstr ""
+
+#Labels
+#empty strings from id 30451 to 30499
+
+msgctxt "#30500"
+msgid "Added"
+msgstr ""
+
+msgctxt "#30501"
+msgid "Title"
+msgstr ""
+
+msgctxt "#30502"
+msgid "Release"
+msgstr ""
+
+msgctxt "#30503"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#30504"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#30505"
+msgid "Favourites"
+msgstr ""
+
+msgctxt "#30506"
+msgid "Subscriptions"
+msgstr ""
+
+msgctxt "#30507"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30508"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#30509"
+msgid "TV Shows"
+msgstr ""
+
+msgctxt "#30510"
+msgid "Account"
+msgstr ""
+
+msgctxt "#30511"
+msgid "Email"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Your ororo.tv email and password are required."
+msgstr ""
+
+msgctxt "#30514"
+msgid "Register free at https://ororo.tv"
+msgstr ""
+
+msgctxt "#30515"
+msgid "Clear Cache"
+msgstr ""
+
+msgctxt "#30516"
+msgid "Failed to login to Ororo.tv"
+msgstr ""
+
+msgctxt "#30517"
+msgid "Please enter your login credentials"
+msgstr ""

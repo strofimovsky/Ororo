@@ -1,0 +1,498 @@
+# XBMC Media Center language file
+# Addon Name: Ororo TV
+# Addon id: plugin.video.ororotv
+# Addon version: 4.0.0
+# Addon Provider: ororo.tv
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2020-08-19 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider."
+msgstr ""
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Algemeen"
+
+msgctxt "#30001"
+msgid "Enable Meta Data"
+msgstr "Meta Data inschakelen"
+
+msgctxt "#30002"
+msgid "Enable Fanart"
+msgstr "Fanart inschakelen"
+
+msgctxt "#30003"
+msgid "Favourites"
+msgstr "Favorieten"
+
+msgctxt "#30004"
+msgid "Sort by: Title"
+msgstr "Sorteren op: Titel"
+
+msgctxt "#30005"
+msgid "Sort by: Status"
+msgstr "Sorteren op: Status"
+
+msgctxt "#30006"
+msgid "Sort by: Added"
+msgstr "Sorteren op: Toegevoegd"
+
+msgctxt "#30007"
+msgid "Downloads"
+msgstr "Downloads"
+
+msgctxt "#30008"
+msgid "Resume Playback"
+msgstr "Afspelen hervatten"
+
+msgctxt "#30040"
+msgid "Library"
+msgstr "Bibliotheek"
+
+msgctxt "#30041"
+msgid "Don't forget to add this folder to media sources."
+msgstr "Vergeet deze bron niet toe te voegen aan je bibliotheek."
+
+msgctxt "#30042"
+msgid "TV Folder"
+msgstr "TV map"
+
+msgctxt "#30043"
+msgid "Automatic Updates for Subscriptions"
+msgstr "Automatisch je abonnementen updaten"
+
+msgctxt "#30044"
+msgid "Subscription Update Interval"
+msgstr "Update interval"
+
+msgctxt "#30045"
+msgid "Update Library after Subscription Updates"
+msgstr "Update bibliotheek na update abonnementen"
+
+msgctxt "#30080"
+msgid "Subtitles"
+msgstr "Ondertiteling"
+
+msgctxt "#30081"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr "Ondertiteling kan niet beschikbaar zijn of niet synchroon lopen."
+
+msgctxt "#30082"
+msgid "In that case use your own subtitles."
+msgstr "In dat geval moet je je eigen ondertitels gebruiken."
+
+msgctxt "#30083"
+msgid "Enable subtitles"
+msgstr "Ondertitels gebruiken"
+
+msgctxt "#30084"
+msgid "Primary Language"
+msgstr "Eerste taal"
+
+msgctxt "#30085"
+msgid "Secondary Language"
+msgstr "Tweede taal"
+
+msgctxt "#30302"
+msgid " is on by default"
+msgstr " is als standaard ingesteld"
+
+msgctxt "#30303"
+msgid "Added to Favourites"
+msgstr "Toegevoegd aan Favorieten"
+
+msgctxt "#30304"
+msgid "Removed from Favourites"
+msgstr "Verwijderd uit Favorieten"
+
+msgctxt "#30305"
+msgid "Moved up"
+msgstr "Naar boven geplaatst"
+
+msgctxt "#30306"
+msgid "Moved down"
+msgstr "Naar beneden geplaatst"
+
+msgctxt "#30307"
+msgid "Item already in Favourites"
+msgstr "Artikel staat al in Favorieten"
+
+msgctxt "#30308"
+msgid "Download started"
+msgstr "Download gestart"
+
+msgctxt "#30309"
+msgid "Download Progress - "
+msgstr "Download voortgang - "
+
+msgctxt "#30310"
+msgid "Download finished successfully"
+msgstr "Download succesvol afgerond"
+
+msgctxt "#30311"
+msgid "Added to Library Folder"
+msgstr "Toegevoegd aan Bibliotheek map"
+
+msgctxt "#30312"
+msgid "Added to Subscriptions"
+msgstr "Toegevoegd aan Abonnementen"
+
+msgctxt "#30313"
+msgid "Removed from Subscriptions"
+msgstr "Verwijderd uit Abonnementen"
+
+msgctxt "#30314"
+msgid "Subscriptions updated"
+msgstr "Abonnementen geόpdatet"
+
+msgctxt "#30315"
+msgid "Subscriptions cleaned up"
+msgstr "Abonnementen opgeschoond"
+
+msgctxt "#30316"
+msgid "Item already in Subscriptions"
+msgstr "Artikel staat al in Abonnementen"
+
+msgctxt "#30317"
+msgid "No subtitles available"
+msgstr "Ondertiteling niet beschikbaar"
+
+msgctxt "#30318"
+msgid "Free account limit is reached"
+msgstr "Stream niet beschikbaar"
+
+msgctxt "#30319"
+msgid "Paid subscription is required"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Load failed"
+msgstr ""
+
+msgctxt "#30321"
+msgid "YouTube addon is not installed."
+msgstr "YouTube addon staat niet geοnstalleerd."
+
+msgctxt "#30322"
+msgid "This stream requires it."
+msgstr "Deze stream vereist dat."
+
+msgctxt "#30323"
+msgid "You haven't added any Subscription."
+msgstr "Je hebt geen Abonnementen toegevoegd."
+
+msgctxt "#30324"
+msgid "Latest Episodes require it."
+msgstr "Nieuwste Afleveringen vereist dit."
+
+msgctxt "#30325"
+msgid "You have disabled Automatic Updates for Subscriptions."
+msgstr "Je hebt Automatische Updates voor Abonnementen uitgeschakeld."
+
+msgctxt "#30326"
+msgid "Latest Episodes require it."
+msgstr "Nieuwste Afleveringen vereist dit."
+
+msgctxt "#30341"
+msgid "You have not set the download folder."
+msgstr "Je hebt geen Download-map ingesteld."
+
+msgctxt "#30342"
+msgid "Do you want to set it now?"
+msgstr "Wil je dat nu doen?"
+
+msgctxt "#30343"
+msgid "The video you are trying to download already exists."
+msgstr "De video die je probeert te downloaden bestaat al."
+
+msgctxt "#30344"
+msgid "Do you want to download it again?"
+msgstr "Wil je die opnieuw downloaden?"
+
+msgctxt "#30345"
+msgid "The download of this video is in progress."
+msgstr "Het downloaden van deze video is al bezig."
+
+msgctxt "#30346"
+msgid "Do you want to cancel it?"
+msgstr "Wil je dat annuleren?"
+
+msgctxt "#30347"
+msgid "Movie already in library."
+msgstr "Film al in de bibliotheek."
+
+msgctxt "#30348"
+msgid "TV show already in library."
+msgstr "TV Serie al in de bibliotheek."
+
+msgctxt "#30349"
+msgid "Do you really want to add it?"
+msgstr "Wil je deze alsnog toevoegen?"
+
+msgctxt "#30350"
+msgid "Resume from"
+msgstr "Hervatten vanaf"
+
+msgctxt "#30351"
+msgid "Resume"
+msgstr "Hervatten"
+
+msgctxt "#30352"
+msgid "Start from beginning"
+msgstr "Starten vanaf begin"
+
+msgctxt "#30361"
+msgid "Next Page"
+msgstr "Volgende pagina"
+
+msgctxt "#30362"
+msgid "Search"
+msgstr "Zoeken"
+
+msgctxt "#30363"
+msgid "Downloads"
+msgstr "Downloads"
+
+msgctxt "#30364"
+msgid "Refresh Info"
+msgstr "Info verversen"
+
+msgctxt "#30401"
+msgid "Play"
+msgstr "Afspelen"
+
+msgctxt "#30402"
+msgid "Random Play"
+msgstr "Willekeurig afspelen"
+
+msgctxt "#30403"
+msgid "Play from here"
+msgstr "Afspelen vanaf hier"
+
+msgctxt "#30404"
+msgid "Queue All"
+msgstr "Allen in wachtrij plaatsen"
+
+msgctxt "#30405"
+msgid "Queue video"
+msgstr "Video in wachtrij plaatsen"
+
+msgctxt "#30406"
+msgid "Download video"
+msgstr "Video downloaden"
+
+msgctxt "#30407"
+msgid "Mark as unwatched"
+msgstr "Markeer als niet-bekeken"
+
+msgctxt "#30408"
+msgid "Mark as watched"
+msgstr "Markeer als bekeken"
+
+msgctxt "#30409"
+msgid "Add-on settings"
+msgstr "Add-on instellingen"
+
+msgctxt "#30410"
+msgid "Now playing..."
+msgstr "Speel nu..."
+
+msgctxt "#30411"
+msgid "Home..."
+msgstr "Home..."
+
+msgctxt "#30412"
+msgid "Movie information"
+msgstr "Filminformatie"
+
+msgctxt "#30413"
+msgid "TV show information"
+msgstr "Serie-info"
+
+msgctxt "#30414"
+msgid "Episode information"
+msgstr "Afleveringsinfo"
+
+msgctxt "#30415"
+msgid "Refresh Info"
+msgstr "Info verversen"
+
+msgctxt "#30416"
+msgid "Watch Trailer"
+msgstr "Bekijk Trailer"
+
+msgctxt "#30417"
+msgid "Add to favourites"
+msgstr "Toevoegen aan favorieten"
+
+msgctxt "#30418"
+msgid "Remove from favourites"
+msgstr "Verwijderen uit favorieten"
+
+msgctxt "#30419"
+msgid "Move up"
+msgstr "Naar boven verplaatsen"
+
+msgctxt "#30420"
+msgid "Move down"
+msgstr "Naar beneden verplaatsen"
+
+msgctxt "#30421"
+msgid "Remove"
+msgstr "Verwijderen"
+
+msgctxt "#30422"
+msgid "Add to Library"
+msgstr "Toevoegen aan Bibliotheek"
+
+msgctxt "#30423"
+msgid "Add Subscription"
+msgstr "Abonnement toevoegen"
+
+msgctxt "#30424"
+msgid "Cancel Subscription"
+msgstr "Abonnement annuleren"
+
+msgctxt "#30425"
+msgid "Update Subscriptions"
+msgstr "Abonnementen updaten"
+
+msgctxt "#30426"
+msgid "Update Library"
+msgstr "Bibliotheek updaten"
+
+msgctxt "#30427"
+msgid "Set Global view"
+msgstr "Globale layout vastzetten"
+
+msgctxt "#30428"
+msgid "Set Movies view"
+msgstr "Speelfilms layout vastzetten"
+
+msgctxt "#30429"
+msgid "Set TV Shows view"
+msgstr "TV Series layout vastzetten"
+
+msgctxt "#30430"
+msgid "Set Seasons view"
+msgstr "Seizoens layout vastzetten"
+
+msgctxt "#30431"
+msgid "Set Episodes view"
+msgstr "Afleveringen layout vastzetten"
+
+msgctxt "#30432"
+msgid "Sources"
+msgstr "Bronnen"
+
+msgctxt "#30433"
+msgid "Auto-play"
+msgstr "Automatisch afspelen"
+
+msgctxt "#30434"
+msgid "Movie information"
+msgstr ""
+
+msgctxt "#30435"
+msgid "Set Movie view"
+msgstr ""
+
+msgctxt "#30436"
+msgid "Toggle watched"
+msgstr ""
+
+msgctxt "#30450"
+msgid "Watch TV shows and movies from ororo.tv"
+msgstr "Bekijk TV Series vanaf ororo.tv"
+
+msgctxt "#30500"
+msgid "Added"
+msgstr ""
+
+msgctxt "#30501"
+msgid "Title"
+msgstr "Titel"
+
+msgctxt "#30502"
+msgid "Release"
+msgstr "Releasedatum"
+
+msgctxt "#30503"
+msgid "Rating"
+msgstr "Waardering"
+
+msgctxt "#30504"
+msgid "Genres"
+msgstr "Genres"
+
+msgctxt "#30505"
+msgid "Favourites"
+msgstr "Favorieten"
+
+msgctxt "#30506"
+msgid "Subscriptions"
+msgstr "Abonnementen"
+
+msgctxt "#30507"
+msgid "Search"
+msgstr "Zoeken"
+
+msgctxt "#30508"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#30509"
+msgid "TV Shows"
+msgstr ""
+
+msgctxt "#30510"
+msgid "Account"
+msgstr ""
+
+msgctxt "#30511"
+msgid "Email"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Your ororo.tv email and password are required."
+msgstr ""
+
+msgctxt "#30514"
+msgid "Register free at https://ororo.tv"
+msgstr ""
+
+msgctxt "#30515"
+msgid "Clear Cache"
+msgstr ""
+
+msgctxt "#30516"
+msgid "Failed to login to Ororo.tv"
+msgstr ""
+
+msgctxt "#30517"
+msgid "Please enter your login credentials"
+msgstr ""
