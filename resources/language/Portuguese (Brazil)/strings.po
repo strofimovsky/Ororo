@@ -1,0 +1,498 @@
+# XBMC Media Center language file
+# Addon Name: Ororo TV
+# Addon id: plugin.video.ororotv
+# Addon version: 4.0.0
+# Addon Provider: ororo.tv
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2020-08-19 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Learn English by watching TV shows and movies"
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider."
+msgstr ""
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Geral"
+
+msgctxt "#30001"
+msgid "Enable Meta Data"
+msgstr "Activar Meta dados"
+
+msgctxt "#30002"
+msgid "Enable Fanart"
+msgstr "Activar Fanart"
+
+msgctxt "#30003"
+msgid "Favourites"
+msgstr "Favoritos"
+
+msgctxt "#30004"
+msgid "Sort by: Title"
+msgstr "Ordenar por: Título"
+
+msgctxt "#30005"
+msgid "Sort by: Status"
+msgstr "Ordenar por: Estado"
+
+msgctxt "#30006"
+msgid "Sort by: Added"
+msgstr "Ordenar por: Adicionado"
+
+msgctxt "#30007"
+msgid "Downloads"
+msgstr "Transferência"
+
+msgctxt "#30008"
+msgid "Resume Playback"
+msgstr "Retomar Playback"
+
+msgctxt "#30040"
+msgid "Library"
+msgstr "Biblioteca"
+
+msgctxt "#30041"
+msgid "Don't forget to add this folder to media sources."
+msgstr "Não se esqueça de adicionar esta pasta às fontes multimedia."
+
+msgctxt "#30042"
+msgid "TV Folder"
+msgstr "Pasta de TV"
+
+msgctxt "#30043"
+msgid "Automatic Updates for Subscriptions"
+msgstr "Actualizações automáticas para subscrições"
+
+msgctxt "#30044"
+msgid "Subscription Update Interval"
+msgstr "Intervalo de actualização das subscrições"
+
+msgctxt "#30045"
+msgid "Update Library after Subscription Updates"
+msgstr "Actualizar biblioteca após actualização das subscrições"
+
+msgctxt "#30080"
+msgid "Subtitles"
+msgstr "Legendas"
+
+msgctxt "#30081"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr "As legendas podem não estar disponíveis ou não sincronizadas."
+
+msgctxt "#30082"
+msgid "In that case use your own subtitles."
+msgstr "Nesse caso procure manualmente por legendas."
+
+msgctxt "#30083"
+msgid "Enable subtitles"
+msgstr "Activar legendas"
+
+msgctxt "#30084"
+msgid "Primary Language"
+msgstr "Idioma Principal"
+
+msgctxt "#30085"
+msgid "Secondary Language"
+msgstr "Idioma Secundário"
+
+msgctxt "#30302"
+msgid " is on by default"
+msgstr " está activado por defeito"
+
+msgctxt "#30303"
+msgid "Added to Favourites"
+msgstr "Adicionado aos favoritos"
+
+msgctxt "#30304"
+msgid "Removed from Favourites"
+msgstr "Removido dos favoritos"
+
+msgctxt "#30305"
+msgid "Moved up"
+msgstr "Movido para cima"
+
+msgctxt "#30306"
+msgid "Moved down"
+msgstr "Movido para baixo"
+
+msgctxt "#30307"
+msgid "Item already in Favourites"
+msgstr "O item já existe nos favoritos"
+
+msgctxt "#30308"
+msgid "Download started"
+msgstr "Transferência começou"
+
+msgctxt "#30309"
+msgid "Download Progress - "
+msgstr "Progresso da transferência - "
+
+msgctxt "#30310"
+msgid "Download finished successfully"
+msgstr "Transferência terminou com sucesso"
+
+msgctxt "#30311"
+msgid "Added to Library Folder"
+msgstr "Adicionado à pasta da biblioteca"
+
+msgctxt "#30312"
+msgid "Added to Subscriptions"
+msgstr "Adicionado às subscrições"
+
+msgctxt "#30313"
+msgid "Removed from Subscriptions"
+msgstr "Removido das subscrições"
+
+msgctxt "#30314"
+msgid "Subscriptions updated"
+msgstr "Subscrições actualizadas"
+
+msgctxt "#30315"
+msgid "Subscriptions cleaned up"
+msgstr "Subscrições apagadas"
+
+msgctxt "#30316"
+msgid "Item already in Subscriptions"
+msgstr "O item já existe nas subscrições"
+
+msgctxt "#30317"
+msgid "No subtitles available"
+msgstr "Não há legendas disponíveis"
+
+msgctxt "#30318"
+msgid "Free account limit is reached"
+msgstr "Stream não encontrada"
+
+msgctxt "#30319"
+msgid "Paid subscription is required"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Load failed"
+msgstr ""
+
+msgctxt "#30321"
+msgid "YouTube addon is not installed."
+msgstr "O addon Youtube não está instalado."
+
+msgctxt "#30322"
+msgid "This stream requires it."
+msgstr "Esta stream necessita dele."
+
+msgctxt "#30323"
+msgid "You haven't added any Subscription."
+msgstr "Não adicionou nenhuma subscrição."
+
+msgctxt "#30324"
+msgid "Latest Episodes require it."
+msgstr "Os últimos episódios necessitam."
+
+msgctxt "#30325"
+msgid "You have disabled Automatic Updates for Subscriptions."
+msgstr "Desactivou os updates automáticos das subscrições."
+
+msgctxt "#30326"
+msgid "Latest Episodes require it."
+msgstr "Os últimos episódios dependem deles."
+
+msgctxt "#30341"
+msgid "You have not set the download folder."
+msgstr "Não definiu a pasta de download."
+
+msgctxt "#30342"
+msgid "Do you want to set it now?"
+msgstr "Quer defini-la agora?"
+
+msgctxt "#30343"
+msgid "The video you are trying to download already exists."
+msgstr "O vídeo que está a tentar transferir já existe."
+
+msgctxt "#30344"
+msgid "Do you want to download it again?"
+msgstr "Deseja fazer a Transferência novamente?"
+
+msgctxt "#30345"
+msgid "The download of this video is in progress."
+msgstr "O vídeo está a transferir."
+
+msgctxt "#30346"
+msgid "Do you want to cancel it?"
+msgstr "Deseja cancelar?"
+
+msgctxt "#30347"
+msgid "Movie already in library."
+msgstr "Filme já na biblioteca."
+
+msgctxt "#30348"
+msgid "TV show already in library."
+msgstr "Série já na biblioteca."
+
+msgctxt "#30349"
+msgid "Do you really want to add it?"
+msgstr "Tem a certeza que a quer adicionar?"
+
+msgctxt "#30350"
+msgid "Resume from"
+msgstr "Resumir desde"
+
+msgctxt "#30351"
+msgid "Resume"
+msgstr "Resumir"
+
+msgctxt "#30352"
+msgid "Start from beginning"
+msgstr "Retomar desde o início"
+
+msgctxt "#30361"
+msgid "Next Page"
+msgstr "Próxima página"
+
+msgctxt "#30362"
+msgid "Search"
+msgstr "Pesquisar"
+
+msgctxt "#30363"
+msgid "Downloads"
+msgstr "Transferências"
+
+msgctxt "#30364"
+msgid "Refresh Info"
+msgstr "Actualizar informação"
+
+msgctxt "#30401"
+msgid "Play"
+msgstr "Reproduzir"
+
+msgctxt "#30402"
+msgid "Random Play"
+msgstr "Reproduzir aleatório"
+
+msgctxt "#30403"
+msgid "Play from here"
+msgstr "Reproduzir a partir daqui"
+
+msgctxt "#30404"
+msgid "Queue All"
+msgstr "Colocar todos em fila"
+
+msgctxt "#30405"
+msgid "Queue video"
+msgstr "Colocar vídeo em fila"
+
+msgctxt "#30406"
+msgid "Download video"
+msgstr "Transferir vídeo"
+
+msgctxt "#30407"
+msgid "Mark as unwatched"
+msgstr "Marcar como não visto"
+
+msgctxt "#30408"
+msgid "Mark as watched"
+msgstr "Marcar como visto"
+
+msgctxt "#30409"
+msgid "Add-on settings"
+msgstr "Definições do addon"
+
+msgctxt "#30410"
+msgid "Now playing..."
+msgstr "A reproduzir agora..."
+
+msgctxt "#30411"
+msgid "Home..."
+msgstr "Menu principal..."
+
+msgctxt "#30412"
+msgid "Movie information"
+msgstr "Informação do Filme"
+
+msgctxt "#30413"
+msgid "TV show information"
+msgstr "Informação da Série"
+
+msgctxt "#30414"
+msgid "Episode information"
+msgstr "Informação do Episódio"
+
+msgctxt "#30415"
+msgid "Refresh Info"
+msgstr "Actualizar informação"
+
+msgctxt "#30416"
+msgid "Watch Trailer"
+msgstr "Visualizar trailer"
+
+msgctxt "#30417"
+msgid "Add to favourites"
+msgstr "Adicionar aos favoritos"
+
+msgctxt "#30418"
+msgid "Remove from favourites"
+msgstr "Remover dos favoritos"
+
+msgctxt "#30419"
+msgid "Move up"
+msgstr "Mover para cima"
+
+msgctxt "#30420"
+msgid "Move down"
+msgstr "Mover para baixo"
+
+msgctxt "#30421"
+msgid "Remove"
+msgstr "Remover"
+
+msgctxt "#30422"
+msgid "Add to Library"
+msgstr "Adicionar à biblioteca"
+
+msgctxt "#30423"
+msgid "Add Subscription"
+msgstr "Adicionar subscrição"
+
+msgctxt "#30424"
+msgid "Cancel Subscription"
+msgstr "Cancelar subscrição"
+
+msgctxt "#30425"
+msgid "Update Subscriptions"
+msgstr "Actualizar subscrição"
+
+msgctxt "#30426"
+msgid "Update Library"
+msgstr "Atualizar coleção"
+
+msgctxt "#30427"
+msgid "Set Global view"
+msgstr "Definir vista global"
+
+msgctxt "#30428"
+msgid "Set Movies view"
+msgstr "Definir vista de filmes"
+
+msgctxt "#30429"
+msgid "Set TV Shows view"
+msgstr "Definir vista de séries"
+
+msgctxt "#30430"
+msgid "Set Seasons view"
+msgstr "Definir vista de temporadas"
+
+msgctxt "#30431"
+msgid "Set Episodes view"
+msgstr "Definir vista de episódios"
+
+msgctxt "#30432"
+msgid "Sources"
+msgstr "Fontes"
+
+msgctxt "#30433"
+msgid "Auto-play"
+msgstr "Reprodução automática"
+
+msgctxt "#30434"
+msgid "Movie information"
+msgstr ""
+
+msgctxt "#30435"
+msgid "Set Movie view"
+msgstr ""
+
+msgctxt "#30436"
+msgid "Toggle watched"
+msgstr ""
+
+msgctxt "#30450"
+msgid "Watch TV shows and movies from ororo.tv"
+msgstr "Assistir a séries de site ororo.tv"
+
+msgctxt "#30500"
+msgid "Added"
+msgstr ""
+
+msgctxt "#30501"
+msgid "Title"
+msgstr "Título"
+
+msgctxt "#30502"
+msgid "Release"
+msgstr "Lançamento"
+
+msgctxt "#30503"
+msgid "Rating"
+msgstr "Classificação"
+
+msgctxt "#30504"
+msgid "Genres"
+msgstr "Géneros"
+
+msgctxt "#30505"
+msgid "Favourites"
+msgstr "Favoritos"
+
+msgctxt "#30506"
+msgid "Subscriptions"
+msgstr "Subscrições"
+
+msgctxt "#30507"
+msgid "Search"
+msgstr "Procurar"
+
+msgctxt "#30508"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#30509"
+msgid "TV Shows"
+msgstr ""
+
+msgctxt "#30510"
+msgid "Account"
+msgstr ""
+
+msgctxt "#30511"
+msgid "Email"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Your ororo.tv email and password are required."
+msgstr ""
+
+msgctxt "#30514"
+msgid "Register free at https://ororo.tv"
+msgstr ""
+
+msgctxt "#30515"
+msgid "Clear Cache"
+msgstr ""
+
+msgctxt "#30516"
+msgid "Failed to login to Ororo.tv"
+msgstr ""
+
+msgctxt "#30517"
+msgid "Please enter your login credentials"
+msgstr ""
