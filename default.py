@@ -100,6 +100,12 @@ class main:
         elif action == 'library_update':            contextMenu(index).library_update(subData)
         elif action == 'library_service':           contextMenu(index).library_update(subData, silent=True)
 
+        elif action == 'mark_show_watched':         contextMenu(index).mark_watched(id, None, True)
+        elif action == 'mark_show_unwatched':       contextMenu(index).mark_watched(id, None, False)
+        elif action == 'mark_season_watched':       contextMenu(index).mark_watched(id, int(season), True)
+        elif action == 'mark_season_unwatched':     contextMenu(index).mark_watched(id, int(season), False)
+        elif action == 'reset_watched':             contextMenu(index).reset_watched()
+
         elif action == 'shows_favourites':          favourites().shows()
         elif action == 'shows_subscriptions':       subscriptions().shows()
 
@@ -292,7 +298,10 @@ class index:
     def rootList(self, rootList):
         total = len(rootList)
         for i in rootList:
-            name = language(i['name']).encode("utf-8")
+            try:
+                name = language(i['name']).encode("utf-8")
+            except:
+                name = i['name']
             image = '%s/%s' % (addonArt, i['image'])
             action = i['action']
             u = '%s?action=%s' % (sys.argv[0], action)
@@ -420,26 +429,7 @@ class index:
         show_list = self.sort_shows(show_list, sort_by, search_query)
         self.showList(show_list)
 
-    def getWatchedEpisodes(self, show_name):
-        """Query Kodi's database for watched episodes of a show"""
-        try:
-            request = {
-                "jsonrpc": "2.0",
-                "method": "VideoLibrary.GetEpisodes",
-                "params": {
-                    "filter": {"field": "tvshow", "operator": "is", "value": show_name},
-                    "properties": ["playcount"]
-                },
-                "id": 1
-            }
-            response = json.loads(xbmc.executeJSONRPC(json.dumps(request)))
-            if 'result' in response and 'episodes' in response['result']:
-                return sum(1 for ep in response['result']['episodes'] if ep.get('playcount', 0) > 0)
-        except:
-            pass
-        return 0
-
-    def showList(self, showList, show_episode_counts=False):
+    def showList(self, showList):
         if showList == None: return
 
         file = xbmcvfs.File(favData)
@@ -449,8 +439,12 @@ class index:
         subRead = file.read()
         file.close()
 
-        # For favourites/subscriptions, fetch episode counts
-        is_favourites_or_subs = action in ['shows_favourites', 'shows_subscriptions']
+        is_fav_or_sub = action in ['shows_favourites', 'shows_subscriptions']
+        show_details = {}
+        watched_ids = set()
+        if is_fav_or_sub and showList:
+            show_details = self.get_shows_parallel([s['id'] for s in showList])
+            watched_ids = self.getWatchedEpisodeIds()
 
         for show in showList:
             try:
@@ -458,15 +452,15 @@ class index:
                 sysname = urllib_parse.quote_plus(show['name'])
                 display_name = show['name']
 
-                # For favourites/subscriptions, show total episode count
-                if is_favourites_or_subs:
-                    try:
-                        show_details = self.get_show(id)
-                        total_episodes = len(show_details.get('episodes', []))
-                        if total_episodes > 0:
-                            display_name = '%s (%d episodes)' % (show['name'], total_episodes)
-                    except:
-                        pass
+                if is_fav_or_sub:
+                    details = show_details.get(id)
+                    if details:
+                        eps = details.get('episodes') or []
+                        total = len(eps)
+                        w = sum(1 for ep in eps if ep.get('id') in watched_ids)
+                        new = max(0, total - w)
+                        if new > 0:
+                            display_name = '%s (%d)' % (show['name'], new)
 
                 u = '%s?action=seasons&id=%s' % (sys.argv[0], id)
                 meta = {'mediatype': 'tvshow', 'title': show['name'], 'tvshowtitle': show['name'], 'year' : show['year'], 'imdbnumber': 'tt' + show['imdb'], 'genre' : show['genre'], 'plot': show['plot']}
@@ -491,6 +485,10 @@ class index:
                     if not '"%s"' % show['id'] in favRead: cm.append((language(30417).encode("utf-8"), 'RunPlugin(%s?action=favourite_add&id=%s&name=%s)' % (sys.argv[0], id, sysname)))
                     else: cm.append((language(30418).encode("utf-8"), 'RunPlugin(%s?action=favourite_delete&id=%s&name=%s)' % (sys.argv[0], id, sysname)))
 
+                if is_fav_or_sub:
+                    cm.append(('Mark show watched', 'RunPlugin(%s?action=mark_show_watched&id=%s)' % (sys.argv[0], id)))
+                    cm.append(('Mark show unwatched', 'RunPlugin(%s?action=mark_show_unwatched&id=%s)' % (sys.argv[0], id)))
+
                 cm.append((language(30410).encode("utf-8"), 'RunPlugin(%s?action=playlist_open)' % (sys.argv[0])))
                 cm.append((language(30409).encode("utf-8"), 'RunPlugin(%s?action=settings_open)' % (sys.argv[0])))
                 cm.append((language(30411).encode("utf-8"), 'RunPlugin(%s?action=addon_home)' % (sys.argv[0])))
@@ -507,6 +505,47 @@ class index:
 
     def get_show(self, show_id):
         return cache.get(API.show, 2, show_id)
+
+    def get_shows_parallel(self, show_ids, max_workers=10):
+        try: from Queue import Queue
+        except: from queue import Queue
+
+        results, lock, q = {}, threading.Lock(), Queue()
+        for sid in show_ids: q.put(sid)
+
+        def worker():
+            while True:
+                try: sid = q.get_nowait()
+                except: return
+                try:
+                    show = self.get_show(sid)
+                    with lock: results[sid] = show
+                except: pass
+
+        threads = [threading.Thread(target=worker) for _ in range(min(max_workers, len(show_ids)))]
+        for t in threads:
+            t.daemon = True
+            t.start()
+        for t in threads: t.join()
+        return results
+
+    def getWatchedEpisodeIds(self):
+        try:
+            from sqlite3 import dbapi2 as sqldb
+            import glob
+            dbs = sorted(glob.glob(transPath('special://database/MyVideos*.db')))
+            if not dbs: return set()
+            conn = sqldb.connect(dbs[-1])
+            cur = conn.cursor()
+            cur.execute("SELECT strFilename FROM files WHERE strFilename LIKE '%plugin.video.ororotv%' AND playCount > 0")
+            ids = set()
+            for (url,) in cur.fetchall():
+                m = re.search(r'[?&]id=(\d+)', url)
+                if m: ids.add(int(m.group(1)))
+            conn.close()
+            return ids
+        except:
+            return set()
 
     def get_seasons(self, show):
         list = []
@@ -533,27 +572,29 @@ class index:
         try: fanart = show['backdrop_url']
         except: fanart = addonFanart
 
-        # Get all episodes for counting
         all_episodes = self.get_episodes(show)
+        watched_ids = self.getWatchedEpisodeIds()
 
         for season in seasonList:
             try:
                 season_num = season['season']
                 display_name = season['name']
 
-                # Count total episodes in this season
                 season_episodes = [ep for ep in all_episodes if ep['season'] == season_num]
                 total_in_season = len(season_episodes)
+                watched_in_season = sum(1 for ep in season_episodes if ep.get('id') in watched_ids)
+                new_in_season = max(0, total_in_season - watched_in_season)
 
-                # Show episode count as "(X episodes)" - Kodi handles watched status natively
-                if total_in_season > 0:
-                    display_name = '%s (%d episodes)' % (season['name'], total_in_season)
+                if new_in_season > 0:
+                    display_name = '%s (%d)' % (season['name'], new_in_season)
 
                 u = '%s?action=episodes&id=%s&season=%i' % (sys.argv[0], show['id'], season_num)
 
                 cm = []
                 cm.append((language(30401).encode("utf-8"), 'RunPlugin(%s?action=item_play)' % (sys.argv[0])))
                 cm.append((language(30404).encode("utf-8"), 'RunPlugin(%s?action=item_queue)' % (sys.argv[0])))
+                cm.append(('Mark season watched', 'RunPlugin(%s?action=mark_season_watched&id=%s&season=%d)' % (sys.argv[0], show['id'], season_num)))
+                cm.append(('Mark season unwatched', 'RunPlugin(%s?action=mark_season_unwatched&id=%s&season=%d)' % (sys.argv[0], show['id'], season_num)))
                 cm.append((language(30410).encode("utf-8"), 'RunPlugin(%s?action=playlist_open)' % (sys.argv[0])))
                 cm.append((language(30409).encode("utf-8"), 'RunPlugin(%s?action=settings_open)' % (sys.argv[0])))
                 cm.append((language(30411).encode("utf-8"), 'RunPlugin(%s?action=addon_home)' % (sys.argv[0])))
@@ -832,6 +873,7 @@ class root:
             rootList.append({'name': 30505, 'image': 'Favourites.png', 'action': 'shows_favourites'})
             rootList.append({'name': 30506, 'image': 'Subscriptions.png', 'action': 'shows_subscriptions'})
             rootList.append({'name': 30507, 'image': 'Search.png', 'action': 'shows_search'})
+            rootList.append({'name': 'Reset watched state', 'image': 'Subscriptions.png', 'action': 'reset_watched'})
         else:
             cache.cache_version_check()
             rootList.append({'name': 30508, 'image': 'Movies.png', 'action': 'root_movies'})

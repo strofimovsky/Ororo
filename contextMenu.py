@@ -208,6 +208,85 @@ class contextMenu:
         except:
             return
 
+    def mark_watched(self, show_id, season=None, watched=True):
+        try:
+            show = self.index().get_show(show_id)
+            episodes = self.index().get_episodes(show, season)
+            ids = [ep['id'] for ep in episodes if ep.get('id')]
+            if not ids: return
+            self._write_watched(ids, watched)
+            self.index().container_refresh()
+        except:
+            return
+
+    def _write_watched(self, episode_ids, watched):
+        import glob as _glob, time
+        from sqlite3 import dbapi2 as sqldb
+        from datetime import datetime
+        dbs = sorted(_glob.glob(xbmcvfs.translatePath('special://database/MyVideos*.db')))
+        if not dbs: return
+        playcount = 1 if watched else 0
+        now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        last = now if watched else None
+        for attempt in range(3):
+            conn = None
+            try:
+                conn = sqldb.connect(dbs[-1], timeout=3)
+                cur = conn.cursor()
+                cur.execute("BEGIN IMMEDIATE")
+
+                cur.execute("SELECT idPath FROM path WHERE strPath='plugin://plugin.video.ororotv/'")
+                row = cur.fetchone()
+                if row:
+                    id_path = row[0]
+                else:
+                    cur.execute("INSERT INTO path (strPath, dateAdded) VALUES ('plugin://plugin.video.ororotv/', ?)", (now,))
+                    id_path = cur.lastrowid
+
+                for ep_id in episode_ids:
+                    cur.execute(
+                        "UPDATE files SET playCount=?, lastPlayed=? "
+                        "WHERE strFilename LIKE '%plugin.video.ororotv%' "
+                        "AND (strFilename GLOB ? OR strFilename GLOB ?)",
+                        (playcount, last, '*[?&]id=%d&*' % ep_id, '*[?&]id=%d' % ep_id)
+                    )
+                    if cur.rowcount == 0 and watched:
+                        url = 'plugin://plugin.video.ororotv/?action=play&id=%d&content_type=shows' % ep_id
+                        cur.execute(
+                            "INSERT INTO files (idPath, strFilename, playCount, lastPlayed, dateAdded) "
+                            "VALUES (?, ?, ?, ?, ?)",
+                            (id_path, url, playcount, last, now)
+                        )
+                conn.commit()
+                conn.close()
+                return
+            except Exception:
+                try: conn.close()
+                except: pass
+                time.sleep(0.15 * (attempt + 1))
+
+    def reset_watched(self):
+        import glob
+        from sqlite3 import dbapi2 as sqldb
+        dbs = sorted(glob.glob(xbmcvfs.translatePath('special://database/MyVideos*.db')))
+        if not dbs: return
+        conn = None
+        try:
+            conn = sqldb.connect(dbs[-1], timeout=3)
+            cur = conn.cursor()
+            cur.execute("BEGIN IMMEDIATE")
+            cur.execute(
+                "UPDATE files SET playCount=0, lastPlayed=NULL "
+                "WHERE strFilename LIKE '%plugin.video.ororotv%'"
+            )
+            conn.commit()
+            conn.close()
+            self.index().container_refresh()
+        except Exception:
+            try:
+                if conn: conn.close()
+            except: pass
+
     def library(self, id, check=False, silent=False):
         library = xbmcvfs.translatePath(xbmcaddon.Addon().getSetting("tv_library"))
         dataPath = xbmcvfs.translatePath('special://profile/addon_data/%s' % (xbmcaddon.Addon().getAddonInfo("id")))

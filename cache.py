@@ -59,7 +59,7 @@ def get(function_, duration, *args, **table):
 
         a = hashlib.md5()
         for i in args:
-            a.update(str(i))
+            a.update(str(i).encode('utf-8'))
         a = str(a.hexdigest())
 
     except Exception:
