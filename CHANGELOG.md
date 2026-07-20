@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.1.4] - 2026-07-19
+
+### Fixed
+- Android playback now tries the adaptive HLS stream first and automatically retries the direct MP4 when Kodi cannot open the HLS stream.
+
 ## [4.1.2] - 2026-05-08
 
 ### Fixed

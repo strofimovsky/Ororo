@@ -18,7 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-import re,os,threading,datetime,time,base64,itertools,calendar,re
+import re,os,sys,threading,datetime,time,base64,itertools,calendar,re
 
 import six
 from six.moves import urllib_parse
@@ -156,40 +156,85 @@ class main:
         return
 
 class player(xbmc.Player):
+    STARTUP_TIMEOUT_SECONDS = 45
+
     def __init__ (self):
         self.folderPath = xbmc.getInfoLabel('Container.FolderPath')
         self.loadingStarting = time.time()
+        self.avStarted = False
+        self.playbackError = False
+        self.playbackStopped = False
         xbmc.Player.__init__(self)
 
     def run(self, info):
         self.__dict__.update(info)
 
-        item = xbmcgui.ListItem(path=self.url)
-        meta = {'label': self.name, 'title': self.name} # Fix for playlist name change
-        item.setInfo(type="Video", infoLabels=meta)
+        item = self.getListItem(self.url)
         xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, item)
 
-        for i in range(0, 250):
-            try: self.totalTime = self.getTotalTime()
-            except: self.totalTime = 0
-            if not self.totalTime == 0: continue
-            xbmc.sleep(1000)
-        if self.totalTime == 0: return
+        result = self.waitForPlaybackStart()
+        fallbackUrl = info.get('fallback_url')
+        if result in ('error', 'stopped', 'timeout') and fallbackUrl:
+            xbmc.log('[Ororo TV] HLS playback failed to start (%s); retrying direct MP4' % result, xbmc.LOGWARNING)
+            if result == 'timeout':
+                self.stop()
+            xbmc.sleep(500)
+            xbmc.executebuiltin('Dialog.Close(all,true)')
+            self.resetPlaybackState()
+            self.url = fallbackUrl
+            self.play(self.url, self.getListItem(self.url))
+            result = self.waitForPlaybackStart()
 
-        while True:
-            try: self.currentTime = self.getTime()
-            except: break
+        if result != 'started':
+            return
+
+        while self.isPlaying():
             xbmc.sleep(1000)
+
+    def getListItem(self, url):
+        item = xbmcgui.ListItem(path=url)
+        meta = {'label': self.name, 'title': self.name} # Fix for playlist name change
+        item.setInfo(type="Video", infoLabels=meta)
+        return item
+
+    def waitForPlaybackStart(self):
+        attempts = self.STARTUP_TIMEOUT_SECONDS * 4
+        for i in range(0, attempts):
+            if self.avStarted or self.isPlayingVideo():
+                return 'started'
+            if self.playbackError:
+                return 'error'
+            if self.playbackStopped:
+                return 'stopped'
+            xbmc.sleep(250)
+        return 'timeout'
+
+    def resetPlaybackState(self):
+        self.avStarted = False
+        self.playbackError = False
+        self.playbackStopped = False
 
     def onPlayBackStarted(self):
         try: self.setSubtitles(self.subtitle)
         except: pass
+
+    def onAVStarted(self):
+        self.avStarted = True
+        try: self.setSubtitles(self.subtitle)
+        except: pass
+
+    def onPlayBackError(self):
+        self.playbackError = True
+
+    def onPlayBackStopped(self):
+        self.playbackStopped = True
 
 
 class index:
     def resolve(self, id):
         try:
             info = self.media_info(id, content_type)
+            info['fallback_url'] = self.get_playback_fallback(info)
 
             if getSetting('subtitles') == 'true':
                 preferred_lang = xbmc.convertLanguage(getSetting('sublang1'), xbmc.ISO_639_1)
@@ -200,6 +245,17 @@ class index:
             player().run(info)
         except:
             pass
+
+    def get_playback_fallback(self, info):
+        try:
+            stream_url = info.get('url')
+            download_url = info.get('download_url')
+            is_android = xbmc.getCondVisibility('System.Platform.Android')
+            if is_android and stream_url and '.m3u8' in stream_url.lower() and download_url:
+                return download_url
+        except:
+            pass
+        return None
 
     def media_info(self, id, type):
         return cache.get(self.get_media_info, 2, id, type)
