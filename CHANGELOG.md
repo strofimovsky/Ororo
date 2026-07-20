@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.1.5] - 2026-07-19
+
+### Fixed
+- Android now uses Ororo's muxed MPEG-TS HLS endpoint instead of separate fMP4 audio/video renditions, avoiding Kodi's 30-second demux initialization timeout while retaining adaptive quality.
+- Direct MP4 playback remains available as a final fallback when adaptive HLS cannot start.
+
 ## [4.1.4] - 2026-07-19
 
 ### Fixed

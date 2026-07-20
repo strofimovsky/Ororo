@@ -234,7 +234,7 @@ class index:
     def resolve(self, id):
         try:
             info = self.media_info(id, content_type)
-            info['fallback_url'] = self.get_playback_fallback(info)
+            info['fallback_url'] = self.prepare_playback(info)
 
             if getSetting('subtitles') == 'true':
                 preferred_lang = xbmc.convertLanguage(getSetting('sublang1'), xbmc.ISO_639_1)
@@ -246,12 +246,19 @@ class index:
         except:
             pass
 
-    def get_playback_fallback(self, info):
+    def prepare_playback(self, info):
         try:
             stream_url = info.get('url')
             download_url = info.get('download_url')
             is_android = xbmc.getCondVisibility('System.Platform.Android')
-            if is_android and stream_url and '.m3u8' in stream_url.lower() and download_url:
+            if not is_android or not stream_url or '.m3u8' not in stream_url.lower():
+                return None
+
+            if 'playlist_fmp4.m3u8' in stream_url.lower():
+                info['url'] = stream_url.replace('playlist_fmp4.m3u8', 'playlist.m3u8')
+                xbmc.log('[Ororo TV] Using MPEG-TS HLS for Android playback', xbmc.LOGINFO)
+
+            if download_url:
                 return download_url
         except:
             pass
